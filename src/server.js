@@ -21,6 +21,10 @@ require('dotenv').config();
     next();
   });
 
+  // CORS
+  const cors = require('cors');
+  app.use(cors({ origin: secretsData.origin_url, credentials: true }));
+
   app.use(express.json());
 
   const { controllers } = require('./controllers');
