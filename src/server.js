@@ -30,7 +30,7 @@ require('dotenv').config();
   const { controllers } = require('./controllers');
   app.use('/api', controllers);
 
-  const port = process.env.PORT || 3000;
+  const port = 3000;
   app.listen(port, () => {
     console.log(`listening ${port}`);
   });
