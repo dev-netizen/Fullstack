@@ -4,8 +4,7 @@ module.exports.authQueries = {
                         name,
                         lastName,
                         email,
-                        password,
-                        isActive
+                        password
                 FROM    user
                 WHERE   email     = ?
     `,
