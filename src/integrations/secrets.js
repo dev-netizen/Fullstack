@@ -3,7 +3,7 @@ const Buffer = require('safe-buffer').Buffer;
 // Load the AWS SDK
 let AWS = require('aws-sdk'),
   region = 'us-east-2',
-  secretName = `fullstack${process.env.NODE_ENV}`,
+  secretName = `fullstackdev`,
   secret,
   decodedBinarySecret;
 
