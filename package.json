@@ -1,0 +1,33 @@
+{
+  "name": "FullstackFinalProjectBE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "set-env": "NODE_ENV=dev PORT=3000",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-netizen/FullstackBE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-netizen/FullstackBE/issues"
+  },
+  "homepage": "https://github.com/dev-netizen/FullstackBE#readme",
+  "dependencies": {
+    "aws-sdk": "^2.817.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "safe-buffer": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
