@@ -14,16 +14,16 @@ require('dotenv').config();
   app.use(cookieParser(secretsData.cookie));
 
   app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', secretsData.origin_url);
+    res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Credentials', true);
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     next();
   });
 
   // CORS
   const cors = require('cors');
-  app.use(cors({ origin: secretsData.origin_url, credentials: true }));
+  app.use(cors({ origin: '*', credentials: true }));
 
   app.use(express.json());
 
